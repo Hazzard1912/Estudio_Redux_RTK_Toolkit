@@ -1,0 +1,33 @@
+Redux:
+
+  Redux es un patrón de diseño que se utiliza para gestionar el estado de las aplicaciones de forma predecible y centralizada. Está basado en el uso de reducers para crear y actualizar estados. El núcleo de Redux es el uso de un almacén (Store) que contiene todos los reducers responsables de modificar estados. Redux también ofrece la posibilidad de gestionar peticiones asincrónicas, lo que lo hace útil en aplicaciones que requieren comunicación con servidores.
+
+React-Redux:
+
+  React-Redux solía ser la forma tradicional de implementar Redux en aplicaciones de React. Aunque efectivo, requería escribir una cantidad considerable de código para que todo funcionara correctamente. Esto a veces podía llevar a una mayor complejidad en la configuración.
+
+Redux-Toolkit:
+
+  Redux-Toolkit es una colección de herramientas que simplifican la implementación de Redux en aplicaciones de React. Ofrece utilidades que facilitan la creación de reducers, acciones y almacenes Redux. Su objetivo es reducir la cantidad de código boilerplate necesario y hacer que el desarrollo con Redux sea más rápido y menos propenso a errores.
+
+RTK Query:
+
+  RTK Query es una adición a Redux Toolkit, pero no tiene relación directa con Redux en sí. Esta herramienta permite realizar un seguimiento y gestionar las peticiones HTTP de una manera más sencilla y eficiente en aplicaciones de React que utilizan Redux Toolkit. Proporciona un conjunto de utilidades para definir y realizar peticiones a servidores de forma declarativa.
+
+Pasos para usar Redux:
+
+  1) Crear el Store
+
+  2) Proveer el store a todos los componentes de react, por lo
+  general lo ponemos en el main.jsx. Revisarlo.
+
+  3) Crear y darle al store una serie de reducers, para esto 
+  usamos el `createSlice` de toolkit. No es mas que una funcion
+  que recibe un objeto con las configuraciones de los reducers.
+  Revisar el slice de ejemplo.
+
+Tambien tenemos los thunks:
+
+  Se usan para realizar tareas asincronas. Se usan como un
+  middleware, en el cual dependiendo de como se resuelva, puede
+  o no llamar el dispatch de la accion a la que esta ligado.
